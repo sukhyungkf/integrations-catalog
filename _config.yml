@@ -18,21 +18,40 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Keyfactor Integrations Catalog **DRAFT**
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  A collection of Keyfactor integrations to help you quickly get started with integrating 
+  the platform with your enterprise services.  The catalog is organized by integration type, 
+  and for each integration we've provided the source code as well as pre-compiled binary files.
+
+# baseurl: "/keyfactor-integrations" # the subpath of your site, e.g. /blog
+url: "https://keyfactor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# collections:
+#   integrations:
+#     output: true
+#     permalink: /integrations/:name
+
+mathjax: # this will prased to json, default: {}
+
+mermaid:
+  custom:     # mermaid link
+  initialize: # this will prased to json, default: {}
+
+scss:   # also _includes/extra/styles.scss
+script: # also _includes/extra/script.js
 
 # Build settings
-theme: minima
+remote_theme: rundocs/jekyll-rtd-theme
+
+readme_index:
+  with_frontmatter: true  
+
+
 plugins:
-  - jekyll-feed
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,14 +61,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
