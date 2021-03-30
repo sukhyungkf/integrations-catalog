@@ -5,3 +5,7 @@ show_sorted: false
 ---
 
 # Orchestrator
+
+{% assign filtered_integrations = site.integrations | where: 'type', 'orchestrator' %}
+
+{% include filtered_integrations %}
