@@ -1,6 +1,6 @@
 ---
 name: A10vThunder
-integration_point: orchestrator
+type: orchestrator
 description: | 
     The [A10 vThunder](https://www.a10networks.com/products/thunder-adc/) Orchestrator extension allows an organization to inventory and deploy certificates in any domain that the appliance services.  The Orchestrator deploys the appropriate files (.cer, .pem) within the defined directories and also performs and Inventory on the Items.
 repo_url: https://devops.corp.keyfactor.com/MainCollection/SolutionEngineering/_git/anygateway-godaddy

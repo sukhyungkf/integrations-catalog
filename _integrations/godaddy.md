@@ -1,5 +1,5 @@
 ---
-integration_point: gateway
+type: gateway
 name: GoDaddy
 description: |
     "[GoDaddy](https://ae.godaddy.com/) is a domain registrar, web hosting company, and most relevant here, a public certificate authority.  This gateway allows the management of certificates on the GoDaddy hosting platform.

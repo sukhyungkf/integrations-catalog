@@ -1,0 +1,29 @@
+{
+    "$id": "https://keyfactor.github.io/integration-manifest-schema.json",
+    "title": "Keyfactor Integration",
+    "description": "A Keyfactor Platform Integration",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "The name of the integration, usually in the format '<type>-<name>'",
+        "type": "string"
+      },
+      "integration_type": {
+        "description": "Type of integration.  This should be one of the following: orchestrator, orchestrator-registration, registration-handler, ca-gateway, approval-handler, metadata",
+        "type": "string",
+        "enum": ["orchestrator", "orchestrator-registration", "registration-handler", "ca-gateway", "approval-handler", "metadata"]
+      },
+      "description": {
+        "description": "A high level description of the integration",
+        "type": "string"
+      },
+      "status": {
+        "description": "Status of the integration.  This should be one of the following: development, pilot, production",
+        "type": "string",
+        "enum": ["development", "pilot", "production"]
+      }
+    },
+    "required": [ "name", "integration_type", "status", "description" ]
+  }
+  
