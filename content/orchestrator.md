@@ -14,5 +14,6 @@ show_sorted: false
 
 {{ integration.description }}
 
---
+[Github Repository]({{ integration.repository }})
+
 {% endfor %}

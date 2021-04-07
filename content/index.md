@@ -15,5 +15,5 @@ has_children: true
 {% for integration in ints_for_type %}  
  - [{{ integration.name | capitalize }}](/integrations/{{ integration.name }})
  {% endfor %}
---
+
 {% endfor %}
