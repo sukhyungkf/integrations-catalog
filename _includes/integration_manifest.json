@@ -1,5 +1,0 @@
-{
-	"$schema": "https://keyfactor.github.io/integration-manifest-schema.json",
-    "integration_type": "approval-handler",
-    "description": "sdfds"
-}
