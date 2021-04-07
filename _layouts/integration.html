@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
-
+<header>
 <h1>{{page.name}}</h1>
-<h3>{{page.integration_type}}</h3>
+<h3>{{page.integration_type | capitalize }}</h3>
+</header>
 
-<section>
-    {{page.description}}
-</section>
+<div>{{page.description}}</div>
 
-<section>
-    <a href="{{page.repository}}">Github</a>    
-</section>
+<div><a href="{{page.repository}}">Source code</a></div>
 
 {{ content }}
+
+<footer style="font-size: small">Licensed under the <a href="https://apache.org/licenses/LICENSE-2.0">Apache License</a></footer>

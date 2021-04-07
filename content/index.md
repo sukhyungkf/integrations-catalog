@@ -5,7 +5,7 @@ has_children: true
 
 # Catalog
 
-We are currently in the process of making all of our integrations available publicly and we will be updating this catalog as each is released.  
+We are currently in the process of making all of our integrations available publicly and we will be updating this catalog as each is released.  Each publicly available Keyfactor integration's source code is available to modify and distribute in accordance with the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 {% assign types = "orchestrator, gateway, approval-handler, orchestrator-registration, metadata, registration-handler" | split: ", " %}
 {% for int_type in types %}
@@ -15,7 +15,7 @@ We are currently in the process of making all of our integrations available publ
 ## {{ int_type | replace: "-", " " | capitalize }}
 
 {% for integration in ints_for_type %}  
- - [{{ integration.name | capitalize }}](/integrations/{{ integration.name }})
+ - [{{ integration.name | capitalize }}]({{ integration.url }})
  {% endfor %}
 {% endunless %}
 {% endfor %}
