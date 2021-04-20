@@ -5,7 +5,7 @@ has_children: true
 
 # CA Gateway
 
-{% assign these_integrations = site.integrations | where: "integration_type", 'gateway' | sort: "name" %}
+{% assign these_integrations = site.integrations | where: "integration_type", 'ca-gateway' | sort: "name" %}
 
 {% for integration in these_integrations %}
 
