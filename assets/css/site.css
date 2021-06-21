@@ -1,0 +1,8 @@
+.github-image-link{
+    opacity: .7;    
+    width: 24px;
+}
+
+.github-image-link:hover{    
+    opacity: 1;
+}

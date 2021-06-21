@@ -15,7 +15,7 @@ We are currently in the process of making all of our integrations available publ
 ## {{ int_type | replace: "-", " " | capitalize }}
 
 {% for integration in ints_for_type %}  
- - [{{ integration.name | capitalize }}]({{ integration.url }})
+ - [{{ integration.name | capitalize }}]({{ integration.repository }})
  {% endfor %}
 {% endunless %}
 {% endfor %}

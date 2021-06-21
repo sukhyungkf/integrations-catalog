@@ -3,13 +3,13 @@ layout: default
 ---
 <header>
 <h1>{{page.name}}</h1>
-<h3>{{page.integration_type | capitalize }}</h3>
+<h3 style="display:flex">
+    <div style="width:fit-content"><a href="{{page.url}}">{{page.integration_type | capitalize }}</a></div><div style="flex-grow:1"><a href="{{page.repository}}" data-toggle="tooltip" title="View on GitHub"><img class="github-image-link" src="{{site.baseurl}}/assets/images/GitHub-Mark-32px.png"></a></div></h3>
 </header>
 
 <div>{{page.description}}</div>
 
-<div><a href="{{page.repository}}">Source code</a></div>
 
 {{ content }}
 
-<footer style="font-size: small">Licensed under the <a href="https://apache.org/licenses/LICENSE-2.0">Apache License</a></footer>
+<footer style="font-size: small; margin-top: 5em">Licensed under the <a href="https://apache.org/licenses/LICENSE-2.0">Apache License</a></footer>
