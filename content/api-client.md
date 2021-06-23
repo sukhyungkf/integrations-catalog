@@ -15,7 +15,9 @@ has_children: true
 
 {{ integration.description }}
 
+{% if integration.link_github == true %}
 [Github Repository]({{ integration.repository }})
+{% endif %}
 
 {% endfor %}
 
