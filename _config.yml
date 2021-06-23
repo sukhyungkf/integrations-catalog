@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   the platform with your enterprise services.  The catalog is organized by integration type, 
   and for each integration we've provided the source code as well as pre-compiled binary files.
 
-# baseurl: "/keyfactor-integrations" # the subpath of your site, e.g. /blog
+baseurl: "/keyfactor-integrations" # the subpath of your site, e.g. /blog
 url: "https://keyfactor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # permalink: pretty
