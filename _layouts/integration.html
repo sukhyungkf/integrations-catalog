@@ -9,8 +9,14 @@ layout: default
 
 <div>{{page.description}}</div>
 
-<div style="margin-top:3em"><a href="{{page.repository}}" data-toggle="tooltip" title="View on GitHub">View source on GitHub<img class="github-image-link" src="{{site.baseurl}}/assets/images/GitHub-Mark-32px.png"></a></div>
-
+<div style="margin-top:3em">
+    
+{% if page.link_github == true %}    
+    <a href="{{page.repository}}" data-toggle="tooltip" title="View on GitHub">View source on GitHub<img class="github-image-link" src="{{site.baseurl}}/assets/images/GitHub-Mark-32px.png"></a>
+{% else %}
+This integration is not yet publicly on GitHub. For more information or to ask about private access, please contact Keyfactor.
+{% endif %}    
+</div>
 
 {{ content }}
 
