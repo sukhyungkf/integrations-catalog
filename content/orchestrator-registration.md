@@ -9,7 +9,9 @@ has_children: true
 
 {% for integration in these_integrations %}
 
-### <a href="{{ integration.url }}">{{integration.name | capitalize }}</a>
+<h3 style="display:flex">
+    <a href="{{site.baseurl}}{{integration.url}}">{{integration.name | capitalize }}</a>
+</h3>
 
 {{ integration.description }}
 
