@@ -15,7 +15,11 @@ has_children: true
 
 {{ integration.description }}
 
+{% if integration.link_github == true %}
 [Github Repository]({{ integration.repository }})
+{% else %}
+This integration is not yet publicly on GitHub. For more information or to ask about private access, please contact Keyfactor.
+{% endif %}
 
 {% endfor %}
 
